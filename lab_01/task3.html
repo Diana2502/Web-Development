@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <style>
+        .card {
+            display: inline-block;
+            width: 60px;
+            height: 80px;
+            border: 2px solid #333;
+            border-radius: 8px; 
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 80px; /* Вертикальне центрування тексту */
+            margin: 5px; /* Відступ між картками */
+            background-color: rgba(240, 232, 232, 0.925); /* Фон картки */
+            vertical-align: middle; /* Вирівнювання карток у рядку */
+        }
+
+      
+        .red {
+            color: red;}
+        .black {
+            color: black;}
+       
+        .player-hand {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="player-hand">
+        <p><b><i>Player 1: </i></b></p>
+        <span class="card black">2&spades;</span>
+        <span class="card red">9&hearts;</span>
+        <span class="card red">6&hearts;</span>
+        <span class="card red">A&diams;</span>
+        <span class="card black">Q&spades;</span>
+        <span class="card black">J&clubs;</span>
+    </div>
+
+    <div class="player-hand">
+        <p><b><i>Player 2: </i></b></p>
+        <span class="card red">3&hearts;</span>
+        <span class="card black">A&clubs;</span>
+        <span class="card black">10&clubs;</span>
+        <span class="card red">K&diams;</span>
+        <span class="card black">8&spades;</span>
+        <span class="card red">3&hearts;</span>
+    </div>
+
+</body>
+</html>
