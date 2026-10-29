@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            padding: 30px;
+        }
+
+        .fruit-list {
+            background-color: #ecc0cc;
+            width: 360px;
+            padding: 15px;
+            margin: 0;
+            list-style: none;
+            counter-reset: item;
+            box-sizing: border-box;
+        }
+
+        .fruit-list li {
+            background-color: #d76885;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: stretch; 
+            counter-increment: item;
+            height: 42px;
+        }
+
+        .fruit-list li:last-child {
+            margin-bottom: 0;
+        }
+
+
+        .fruit-list li::before {
+            content: counter(item) ".";
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            padding-left: 12px;
+            padding-right: 12px;
+            min-width: 35px;
+            box-sizing: border-box;
+        }
+
+        .fruit-list li span {
+            background-color: #79203c;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 0 12px;
+            display: flex;
+            align-items: center; 
+        }
+    </style>
+</head>
+<body>
+
+    <ol class="fruit-list">
+        <li><span>Apple</span></li>
+        <li><span>Orange</span></li>
+        <li><span>Pineapple</span></li>
+        <li><span>Pear</span></li>
+        <li><span>Cherry</span></li>
+    </ol>
+
+</body>
+</html>

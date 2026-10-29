@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Завдання 3</title>
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      margin: 30px;
+    }
+
+    h1 {
+      width: 385px;
+      margin: 0 auto 10px;
+    }
+
+    .todo {
+      list-style: none;
+      width: 385px;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .todo li {
+      padding: 15px 15px 15px 20px;
+      color: #333;
+      font-size: 15px;
+    }
+
+    /* парні та непарні елементи: різні відтінки блакитного */
+    .todo li:nth-child(odd)  { background: #a6ccdc; }
+    .todo li:nth-child(even) { background: #aed8e6; }
+
+    /* маркер: порожній квадрат */
+    .todo li::before {
+      content: "\2610";          /* ☐ */
+      font-size: 20px;
+      margin-right: 15px;
+      vertical-align: middle;
+    }
+
+    /* червоний хрестик після тексту */
+    .todo li::after {
+      content: "\00D7";          /* × */
+      color: red;
+      margin-left: 20px;
+    }
+
+    /* відмічені елементи: сірий фон, галочка, закреслений текст */
+    .todo li.checked {
+      background: #e2e2e2;
+      text-decoration: line-through;
+    }
+
+    .todo li.checked::before {
+      content: "\2611";          /* ☑ */
+      text-decoration: none;
+    }
+
+    .todo li.checked::after {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>My To Do List</h1>
+  <ul class="todo">
+    <li>Hit the gym</li>
+    <li>Pay bils</li>
+    <li class="checked">Meet John</li>
+    <li class="checked">Buy eggs</li>
+    <li>Read a book</li>
+    <li>Organize office</li>
+    <li>Eat dinner</li>
+    <li>Buy apples</li>
+    <li>Meet Georg</li>
+    <li class="checked">Feed the cat</li>
+    <li>Write a letter</li>
+    <li>Run 1 km</li>
+  </ul>
+</body>
+</html>
