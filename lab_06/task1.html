@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Завдання 1</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .clock {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      box-sizing: border-box;
+      border: 3px solid teal;
+      border-radius: 50%;
+    }
+
+    .hand {
+      position: absolute;
+      left: 50%;
+      bottom: 50%;                     
+      background: teal;
+      transform-origin: bottom center; 
+      animation-name: rotate;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    
+    .hour {
+      width: 4px;
+      height: 115px;
+      margin-left: -2px;
+      animation-duration: 3600s;
+    }
+
+   
+    .minute {
+      width: 2px;
+      height: 130px;
+      margin-left: -1px;
+      animation-duration: 60s;
+    }
+
+    
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 12px;
+      height: 12px;
+      margin: -6px 0 0 -6px;
+      background: teal;
+      border-radius: 50%;
+    }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="clock">
+    <div class="hand hour"></div>
+    <div class="hand minute"></div>
+    <div class="center"></div>
+  </div>
+</body>
+</html>

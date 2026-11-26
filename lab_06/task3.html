@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Завдання 3</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+
+    .plans {
+      display: flex;
+      gap: 15px;
+      padding: 30px;
+    }
+
+    .plan {
+      position: relative;               
+      width: 170px;
+      padding-bottom: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      transition: 0.3s;                 
+    }
+
+    .plan:hover {
+      transform: scale(1.2);
+      z-index: 1;                       
+    }
+
+    .plan h3 {
+      margin: 0;
+      padding: 15px 0 10px;
+      font-size: 13px;
+      border-bottom: 3px solid;       
+    }
+
+    .price {
+      margin: 15px 0 0;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .per {
+      margin: 0 0 15px;
+      color: #ccc;
+      font: bold 14px Georgia, serif;
+    }
+
+    .plan ul {
+      margin: 0 0 20px;
+      padding: 0;
+      list-style: none;
+      font-size: 11px;
+      font-weight: bold;
+      line-height: 1.9;
+    }
+
+    .buy {
+      display: inline-block;
+      padding: 8px 22px;
+      color: #fff;
+      font-size: 11px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+
+    .enterprise h3 { border-color: #c9375a; }
+    .enterprise .buy { background: #c9375a; }
+
+    .professional h3 { border-color: #d9923b; }
+    .professional .buy { background: #d9923b; }
+
+    .standard h3 { border-color: #2a6587; }
+    .standard .buy { background: #2a6587; }
+
+    .basic h3 { border-color: #66c036; }
+    .basic .buy { background: #66c036; }
+  </style>
+</head>
+<body>
+  <div class="plans">
+
+    <div class="plan enterprise">
+      <h3>ENTERPRISE</h3>
+      <p class="price">$69</p>
+      <p class="per">per month</p>
+      <ul>
+        <li>10GB disk space</li>
+        <li>100GB monthly bandwidth</li>
+        <li>20 email accounts</li>
+        <li>Unlimited subdomens</li>
+      </ul>
+      <button class="buy">BUY</button>
+    </div>
+
+    <div class="plan professional">
+      <h3>PROFESSIONAL</h3>
+      <p class="price">$29</p>
+      <p class="per">per month</p>
+      <ul>
+        <li>5GB disk space</li>
+        <li>60GB monthly bandwidth</li>
+        <li>10 email accounts</li>
+        <li>Unlimited subdomens</li>
+      </ul>
+      <button class="buy">BUY</button>
+    </div>
+
+    <div class="plan standard">
+      <h3>STANDARD</h3>
+      <p class="price">$19</p>
+      <p class="per">per month</p>
+      <ul>
+        <li>3GB disk space</li>
+        <li>30GB monthly bandwidth</li>
+        <li>5 email accounts</li>
+        <li>Unlimited subdomens</li>
+      </ul>
+      <button class="buy">BUY</button>
+    </div>
+
+    <div class="plan basic">
+      <h3>BASIC</h3>
+      <p class="price">$9</p>
+      <p class="per">per month</p>
+      <ul>
+        <li>1GB disk space</li>
+        <li>10GB monthly bandwidth</li>
+        <li>2 email accounts</li>
+        <li>Unlimited subdomens</li>
+      </ul>
+      <button class="buy">BUY</button>
+    </div>
+
+  </div>
+</body>
+</html>

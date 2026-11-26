@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Завдання 5</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .arrow {
+      width: 240px;
+      height: 240px;
+      animation: spin 2s linear infinite;   
+    }
+
+    .arrow path {
+      fill: none;
+      stroke: #7bbfff;
+    }
+
+    .arrow polygon {
+      fill: #4aa8ff;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }  
+    }
+  </style>
+</head>
+<body>
+  <svg class="arrow" viewBox="-10 -10 220 220">
+
+    <path d="M 178.78 113.89 A 80 80 0 0 1 20 100" stroke-width="7"/>
+
+    <path d="M 179.56 108.36 A 80 80 0 0 0 109.75 20.6"
+          stroke-width="7" stroke-dasharray="15 7"/>
+
+    <path d="M 24.82 72.64 A 80 80 0 0 1 101.4 20.01"
+          stroke-width="7" stroke-dasharray="0 14" stroke-linecap="round"/>
+
+    <polygon points="21.5,0 0,-21.5 0,21.5"
+             transform="translate(20 100) rotate(270)"/>
+  </svg>
+</body>
+</html>
