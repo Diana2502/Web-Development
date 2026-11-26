@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Завдання 2</title>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    body { position: relative; }
+
+    img {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px; height: 200px;
+      border: 8px solid #eee;
+      z-index: 2;                      
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 224px; height: 224px;
+      box-sizing: border-box;
+      border: 8px solid transparent;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    body::before {
+      border-top-color: #f7a8ab;
+      border-bottom-color: #f7a8ab;
+      z-index: 1;
+    }
+
+    body::after {
+      border-left-color: #f7a8ab;
+      border-right-color: #f7a8ab;
+      z-index: 3;
+    }
+  </style>
+</head>
+<body>
+  <img src="buket.jpg" alt="Букет">
+</body>
+</html>

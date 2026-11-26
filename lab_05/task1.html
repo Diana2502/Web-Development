@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Завдання 1</title>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    .frame { position: relative; height: 100%; }
+
+    .frame img {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px; height: 200px;
+      border: 8px solid #eee;
+      z-index: 2;                     
+    }
+
+    .diamond {
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 224px; height: 224px;
+      box-sizing: border-box;
+      border: 8px solid transparent;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .diamond-back {
+      border-top-color: #f7a8ab;
+      border-bottom-color: #f7a8ab;
+      z-index: 1;
+    }
+
+    .diamond-front {
+      border-left-color: #f7a8ab;
+      border-right-color: #f7a8ab;
+      z-index: 3;
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <div class="diamond diamond-back"></div>
+    <img src="buket.jpg" alt="Букет">
+    <div class="diamond diamond-front"></div>
+  </div>
+</body>
+</html>
