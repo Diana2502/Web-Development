@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Gallery</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Verdana, Arial, sans-serif;
+      color: #000;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .subtitle {
+      margin: 3px 0 0;
+      font-size: 13px;
+    }
+
+    .line {
+      width: 30px;
+      height: 3px;
+      margin: 10px 0 20px;
+      background: #bbb;
+    }
+
+    .gallery::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .item {
+      float: left;
+      width: 33.3333%;
+      padding: 0 10px 25px;
+    }
+
+    .item img {
+      display: block;
+      width: 100%;
+      height: auto;
+      filter: grayscale(100%);          
+      transition: 0.3s;
+    }
+
+    .item img:hover {
+      filter: grayscale(0);
+      transform: translateY(-5px);
+    }
+
+    .item h3 {
+      margin: 8px 0 3px;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    .item p {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.3;
+    }
+
+    @media (max-width: 960px) {
+      .item {
+        width: 50%;
+      }
+    }
+    @media (max-width: 640px) {
+      .item {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Gallery</h1>
+    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, quaerat?</p>
+    <div class="line"></div>
+
+    <div class="gallery">
+
+      <div class="item">
+        <img src="photo_1.jpg" alt="Фото 1">
+        <h3>Title here</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi quisquam temporibus ipsam.</p>
+      </div>
+
+      <div class="item">
+        <img src="photo_2.jpg" alt="Фото 2">
+        <h3>Title here</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi quisquam temporibus ipsam.</p>
+      </div>
+
+      <div class="item">
+        <img src="photo_3.jpg" alt="Фото 3">
+        <h3>Title here</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi quisquam temporibus ipsam.</p>
+      </div>
+
+      <div class="item">
+        <img src="photo_4.jpg" alt="Фото 4">
+        <h3>Title here</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi quisquam temporibus ipsam.</p>
+      </div>
+
+      <div class="item">
+        <img src="photo_5.jpg" alt="Фото 5">
+        <h3>Title here</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi quisquam temporibus ipsam.</p>
+      </div>
+
+      <div class="item">
+        <img src="photo_6.jpg" alt="Фото 6">
+        <h3>Title here</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi quisquam temporibus ipsam.</p>
+      </div>
+
+      <div class="item">
+        <img src="photo_7.jpg" alt="Фото 7">
+        <h3>Title here</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi quisquam temporibus ipsam.</p>
+      </div>
+
+      <div class="item">
+        <img src="photo_8.jpg" alt="Фото 8">
+        <h3>Title here</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi quisquam temporibus ipsam.</p>
+      </div>
+
+      <div class="item">
+        <img src="photo_9.jpg" alt="Фото 9">
+        <h3>Title here</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi quisquam temporibus ipsam.</p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
